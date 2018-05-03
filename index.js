@@ -31,6 +31,11 @@ srv.ro.get("/", function (req, res) {
 	res.send("Hello <a href='http://www.ziniulian.tk/'>LZR</a>");
 });
 
+// 返回服务名
+srv.ro.get("/myNam/", function (req, res) {
+	res.send("Simi");
+});
+
 // 追踪器
 srv.ro.get("/trace.js", function (req, res) {
 	res.redirect(dmsrv.main + "/js/trace.js");

@@ -43,6 +43,11 @@ srv.ro.get("/myNam/", function (req, res) {
 	res.send("Simi");
 });
 
+// 公共样式
+srv.ro.get("/base.css", function (req, res) {
+	res.redirect(tools.mUrl + "css/common/base.css");
+});
+
 // 追踪器
 srv.ro.get("/trace.js", function (req, res) {
 	res.redirect(tools.mUrl + "/js/trace.js");
